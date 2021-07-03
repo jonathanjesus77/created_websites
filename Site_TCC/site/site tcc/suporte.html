@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <link rel=" shortcut icon" href="../imagens/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="cssapp.css" />
+
+</head>
+<body>
+        <div id="menu">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="comprar.html">Produtos</a></li>
+                <li><a href="coleta.html">Pontos de Coleta</a></li>
+               
+                <li><a href="usuario.html">Login/ Cadastro</a></li>
+                
+                </ul>
+         </div>
+
+         <main>
+              <h1><center>Suporte</center></h1>
+        
+              <form action="suportephp.php" class="form-style-9" method="POST" >
+                <ul>
+                <li>
+                    <input type="text" name="usr_nome" class="field-style field-split align-left" placeholder="Nome" />
+                    <input type="email" name="usr_email" class="field-style field-split align-right" placeholder="Email" />
+                
+                </li>
+                <li>
+                    <input type="text" name="usr_telefone" class="field-style field-split align-left" placeholder="Telefone" />
+                    <input type="text" name="usr_cep" class="field-style field-split align-right" placeholder="CEP" />
+                </li>
+                <li>
+                
+                <label for="Motivo"><font size="6.5px" face="AGENCY FB">Motivos para o contato: </font></label>
+                <SELECT name="usr_motivo" ID="Motivo" >
+                <OPTION ></OPTION>
+                 <OPTION>Crítica </OPTION>
+                <OPTION>Avaliação </OPTION>
+                <OPTION>Dúvida </OPTION>
+                <OPTION> Sugestões </OPTION>
+              </SELECT>
+                </li>
+                <li>
+                <textarea name="usr_msg" class="field-style" placeholder="Mensagem"></textarea>
+                </li>
+                <li>
+                <input type="submit" value="Enviar" onclick="alerta()">
+                </li>
+                </ul>
+                </form>
+                <br />
+                <br />
+                <br />
+        </main>
+        
+        
+        
+        
+</body>
+</html>
