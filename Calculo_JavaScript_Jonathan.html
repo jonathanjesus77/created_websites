@@ -1,0 +1,33 @@
+<html lang="pt">
+<head>
+    <title>Função Calculo</title>
+</head>
+
+    <script language="Javascript">
+
+
+    function erro(){
+        var a = eval(document.calc.t1.value);
+        var b = eval(document.calc.t2.value);
+        var c = a+b;
+
+        alert("O resultado da soma é -> "+c);}
+    
+    </script>
+
+<body>
+    <form name="calc">
+        <h2>Calcular em Javascript</h2>
+        Digite o Primeiro número:<input type="text" name="t1" size="5" maxlenght="4">
+       <br><br>
+        Digite o Segundo número:<input type="text" name="t2" size="5" maxlenght="4">
+        <br><br><hr><br><br>
+        <input type="button" name="bt1" value="Calcular" onclick="erro()">
+        &nbsp&nbsp
+        <input type="reset" name="bt2" value="Limpar" onclick="document.formcalc.t1.focus()">
+        &nbsp&nbsp
+        <input type="button" name="bt3" value="Fechar" onclick="window.close()">
+    </form>
+
+</body>
+</html>
